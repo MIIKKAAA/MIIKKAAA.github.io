@@ -140,8 +140,8 @@ img{
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  padding-top: 30px;
+  padding-bottom: 56.25%;
+  padding-top: 2rem;
   height: 0;
   overflow: hidden;
 }
@@ -154,13 +154,12 @@ img{
   height: 100%;
 }
 
-/* Custom CSS for the list background and font color */
 .list-group.list-group-custom {
-  background-color: #000; /* Black background */
+  background-color: #000;
 }
 
 .list-group-item.list-item-custom {
-  color: #b6b6b6; /* Light gray font color */
+  color: #b6b6b6;
 }
 
 
