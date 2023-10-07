@@ -122,21 +122,21 @@ img{
   color: #808080;
   }
 
-  .nav a:hover {
-  color: #b1b1b1;
-  }
+.nav a:hover {
+color: #b1b1b1;
+}
 
-  .fade-in-image { 
-  animation: fadeIn 5s; 
-  }
+.fade-in-image { 
+animation: fadeIn 5s; 
+}
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-    }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
 
-  .video-iframe {
-    width: 70%;
-    height: 100%;
+.video-iframe {
+  width: 70%;
+  height: 100%;
 }
 
 .video-container {
@@ -217,7 +217,7 @@ border-color: orange
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 2.5  rem;
   line-height: 3rem;
   padding-bottom: 3rem;
       color: #b8b8b8;
@@ -225,6 +225,12 @@ border-color: orange
 
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
 
 .contact-form .form-field {
