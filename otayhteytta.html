@@ -27,34 +27,35 @@
         </li>
       </ul> 
 
-      <div class = "row"> 
-        <div class = "col">
-          <div class = "container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid">
             <section class="get-in-touch">
               <h1 class="title">Ota yhteyttä</h1>
-
-              <form class="contact-form row">
+      
+              <form class="contact-form row" action="https://formspree.io/f/mpzgoezz" method="POST" id="contactForm" name="contactForm">
                 <div class="form-field col-lg-6">
-                    <input id="nimi" class="input-text js-input" type="text" required>
-                    <label class="label" for="nimi">Nimi</label>
+                  <input id="nimi" class="input-text js-input" type="text" name="Nimi" required>
+                  <label class="label" for="nimi">Nimi</label>
                 </div>
                 <div class="form-field col-lg-6 ">
-                    <input id="email" class="input-text js-input" type="email" required>
-                    <label class="label" for="email">Email</label>
+                  <input id="email" class="input-text js-input" type="email" name="Lähettäjä" required>
+                  <label class="label" for="email">Email</label>
                 </div>
                 <div class="form-field col-lg-12">
-                    <input id="msg" class="input-text js-input" type="text" required>
-                    <label class="label" for="msg">Viesti</label>
+                  <input id="msg" class="input-text js-input" type="text" name="Viesti" required>
+                  <label class="label" for="msg">Viesti</label>
                 </div>
                 <div class="form-field col-lg-12">
-                    <button onclick="window.location.href='otayhteytta.html'" type="button" class="btn btn-outline-primary btn-lg">Lähetä</button>
-                    <p><i>(Toiminnallisuus lisätään myöhemmin)</i><p>
+                  <div class="g-recaptcha" data-sitekey="6LfjjYIoAAAAADJSUuh01DDX-rARhoNvbIEFX3ji"></div>
+                  <button type="submit" class="btn btn-outline-primary btn-lg">Lähetä</button>
                 </div>
               </form>
             </section>
           </div>
         </div>
       </div>
+      
       <div class = "row justify-content-center">
         <div class ="col col-md-1 text-center">
           <a href="https://www.instagram.com/miikkaaw/" target="_blank"><img src="img/some_icons/insta_icon.png" class = "w-50"  alt="insta"></a>
@@ -69,6 +70,22 @@
           <a href="https://github.com/MIIKKAAA" target="_blank"><img src="img/some_icons/github_icon.png" class = "w-50" alt="github"></a>
         </div>
       </div>
+
+      <script>
+        function submitForm() {
+          var recaptchaResponse = grecaptcha.getResponse();
+      
+          if (recaptchaResponse.length === 0) {
+            alert("Please complete the reCAPTCHA.");
+            return false;
+          }
+      
+          return true;
+        }
+      
+        var contactForm = document.getElementById("contactForm");
+        contactForm.addEventListener("submit", submitForm);
+      </script>
   </body>
 
       
