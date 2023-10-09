@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-field col-lg-12">
                   <div class="g-recaptcha" data-sitekey="6LfjjYIoAAAAADJSUuh01DDX-rARhoNvbIEFX3ji"></div>
-                  <button type="submit" class="btn btn-outline-primary btn-lg">Lähetä</button>
+                  <button type="submit" class="btn btn-outline-primary btn-lg">Lähetä</button>  
                 </div>
               </form>
             </section>
@@ -71,21 +71,8 @@
         </div>
       </div>
 
-      <script>
-        function submitForm() {
-          var recaptchaResponse = grecaptcha.getResponse();
-      
-          if (recaptchaResponse.length === 0) {
-            alert("Please complete the reCAPTCHA.");
-            return false;
-          }
-      
-          return true;
-        }
-      
-        var contactForm = document.getElementById("contactForm");
-        contactForm.addEventListener("submit", submitForm);
-      </script>
+      <script src="javascript/recaptcha.js"></script>
+
   </body>
 
       
