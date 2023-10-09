@@ -139,6 +139,10 @@ animation: fadeIn 5s;
   height: 100%;
 }
 
+.iframe{
+  border: 0;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -217,7 +221,7 @@ border-color: orange
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 2.5  rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   padding-bottom: 3rem;
       color: #b8b8b8;
