@@ -28,28 +28,28 @@
   </ul>
       <div class="container">
         <div class="row">
-            <div class="get-in-touch">
-              <h1 class="title">Ota yhteyttä</h1>
-              <form class="contact-form row" action="https://formspree.io/f/mpzgoezz" method="POST" id="contactForm" name="contactForm">
-                <div class="form-field col-lg-6">
-                  <input id="nimi" class="input-text js-input" type="text" name="Nimi" required>
-                  <label class="label" for="nimi">Nimi</label>
-                </div>
-                <div class="form-field col-lg-6 ">
-                  <input id="email" class="input-text js-input" type="email" name="Lähettäjä" required>
-                  <label class="label" for="email">Email</label>
-                </div>
-                <div class="form-field col-lg-12">
-                  <input id="msg" class="input-text js-input" type="text" name="Viesti" required>
-                  <label class="label" for="msg">Viesti</label>
-                </div>
-                <div class="form-field col-lg-12">
-                  <div class="g-recaptcha" data-sitekey="6LfjjYIoAAAAADJSUuh01DDX-rARhoNvbIEFX3ji"></div>
-                  <button type="submit" class="btn btn-outline-primary btn-lg">Lähetä</button>  
-                </div>
-              </form>
-            </div>
+          <div class="get-in-touch">
+            <h1 class="title">Ota yhteyttä</h1>
+            <form class="contact-form row" action="https://formspree.io/f/mpzgoezz" method="POST" id="contactForm" name="contactForm">
+              <div class="form-field col-lg-6">
+                <input id="nimi" class="input-text js-input" type="text" name="Nimi" required>
+                <label class="label" for="nimi">Nimi</label>
+              </div>
+              <div class="form-field col-lg-6 ">
+                <input id="email" class="input-text js-input" type="email" name="Lähettäjä" required>
+                <label class="label" for="email">Email</label>
+              </div>
+              <div class="form-field col-lg-12">
+                <input id="msg" class="input-text js-input" type="text" name="Viesti" required>
+                <label class="label" for="msg">Viesti</label>
+              </div>
+              <div class="form-field col-lg-12">
+                <div class="g-recaptcha" data-sitekey="6LfjjYIoAAAAADJSUuh01DDX-rARhoNvbIEFX3ji"></div>
+                <button type="button" class="btn btn-outline-primary btn-lg" onclick="validateEmail()">Lähetä</button>
+              </div>
+            </form>
           </div>
+        </div>
       </div>
     <div class = "container">
       <div class = "row justify-content-center">
@@ -67,8 +67,8 @@
         </div>
       </div>
     </div>
-      <script src="javascript/recaptcha.js"></script>
-
+      <script src="javascript/js.js"></script>
+    
   </body>
 
       
