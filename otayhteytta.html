@@ -1,39 +1,35 @@
 <!doctype html>
 <html lang="fi">
   <head>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Yhteydenotto.">
-      <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">    
-      <link rel="stylesheet" type="text/css" href="css/main.css">
-      <title>Ota yhteyttä</title>
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yhteydenotto">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Ota yhteyttä</title>
+  </head>
   <body>
-    <ul class="nav justify-content-center navbar-dark">
-        <li class="nav-item" >
-          <a class="nav-link" href="index.html">
-              Minä
-            </a>
-        </li>   
-        <li class="nav-item">
+    <ul class="nav justify-content-center navbar-dark navbar-fixed">
+      <li class="nav-item" >
+          <a class="nav-link" href=index.html>
+            Minä
+          </a>
+      </li>   
+      <li class="nav-item">
           <a class="nav-link" href="projektit.html">
-              Projektit
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="otayhteytta.html">
-              Ota yhteyttä
-            </a>
-        </li>
-      </ul> 
-
-      <div class="row">
-        <div class="col">
-          <div class="container-fluid">
-            <section class="get-in-touch">
+            Projektit
+          </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="otayhteytta.html">
+            Ota yhteyttä
+          </a>
+      </li>
+  </ul>
+      <div class="container">
+        <div class="row">
+            <div class="get-in-touch">
               <h1 class="title">Ota yhteyttä</h1>
-      
               <form class="contact-form row" action="https://formspree.io/f/mpzgoezz" method="POST" id="contactForm" name="contactForm">
                 <div class="form-field col-lg-6">
                   <input id="nimi" class="input-text js-input" type="text" name="Nimi" required>
@@ -52,11 +48,10 @@
                   <button type="submit" class="btn btn-outline-primary btn-lg">Lähetä</button>  
                 </div>
               </form>
-            </section>
+            </div>
           </div>
-        </div>
       </div>
-      
+    <div class = "container">
       <div class = "row justify-content-center">
         <div class ="col col-md-1 text-center">
           <a href="https://www.instagram.com/miikkaaw/" target="_blank"><img src="img/some_icons/insta_icon.avif" class = "w-50"  alt="Insta icon"></a>
@@ -71,7 +66,7 @@
           <a href="https://github.com/MIIKKAAA" target="_blank"><img src="img/some_icons/github_icon.avif" class = "w-50" alt="GitHub icon"></a>
         </div>
       </div>
-
+    </div>
       <script src="javascript/recaptcha.js"></script>
 
   </body>

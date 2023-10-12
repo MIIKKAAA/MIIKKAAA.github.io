@@ -87,6 +87,11 @@ img{
   margin-right: 5rem;
 }
 
+.hidden-link {
+  position: relative;
+  text-indent: -9999px;
+  overflow: hidden;
+}
 
 .image-with-margin {
   margin-left: 5rem;
@@ -224,8 +229,8 @@ border-color: orange
   font-size: 2.5rem;
   line-height: 3rem;
   padding-bottom: 3rem;
-      color: #b8b8b8;
-    background: #b8b8b8;
+      color: #b6b6b6;
+    background: #b6b6b6;
 
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
